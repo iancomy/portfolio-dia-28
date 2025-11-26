@@ -1,0 +1,44 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a href="index.html">Introdução</a>
+    <a href="sobre.html">Sobre mim</a>
+    <a href="projetos.html">Projetos que fiz</a>
+    <button id="darkModeBtn">modo escuro</button>
+  </nav>
+</header>
+
+<main>
+  <h1>Meus Projetos</h1>
+
+  <div class="projetos">
+    <div class="projeto" onclick="abrirModal('Sim,isso mesmo!', 'Consegui ensinar em apenas 3 anos vários monges das montanhas!')">
+      <h3>Ensinar Monges Shaolins a codificar.</h3>
+    </div>
+
+    <div class="projeto" onclick="abrirModal('Vish..', 'Se me contratar eu faço esse também!')">
+      <h3>Paz e terminar com a fome mundial</h3>
+    </div>
+  </div>
+</main>
+
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <h2 id="modalTitulo"></h2>
+    <p id="modalTexto"></p>
+    <button onclick="fecharModal()">Fechar</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
